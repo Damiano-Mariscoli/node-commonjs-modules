@@ -2,11 +2,10 @@ const namesFunction = require('./names');
 const hobbiesFunction = require('./hobbies');
 
 function createPerson() {
-    const {firstName ,  lastName} = namesFunction('Damiano' , 'Mariscoli')
+    const name = namesFunction('Damiano' , 'Mariscoli')
     const {hobbies} = hobbiesFunction('Reading', 'Painting', 'Cooking')
     const person = {
-        firstName,
-        lastName,
+        name,
         hobbies
     }
     return person
